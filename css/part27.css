@@ -1,0 +1,98 @@
+.main .pro{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+@media (max-width: 767px){
+    .main .pro {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+}
+.main .pro > div{
+    position: relative;
+    padding: 20px;
+    background-color: white;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.main .pro div .one{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.main .pro div .one i {
+    padding: 10px;
+    background-color: #eee;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.main .pro div .one i:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+.main .pro div .two{
+    padding: 15px 0px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+.main .pro div .two img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.main .pro div .two h4{
+    margin: 5px 0px 0px;
+}
+.main .pro div span{
+    color: var(--grey-color);
+    font-size: 13px;
+}
+.main .pro div .three{
+    padding: 15px 0px;
+    border-bottom: 1px solid #eee;
+}
+.main .pro div .three p{
+    font-size: 14px;
+}
+.main .pro div .three p:not(:last-child){
+    margin-bottom: 10px;
+}
+.main .pro div .four{
+    padding: 15px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .pro div .four div{
+    display: flex;
+    gap: 5px;
+}
+.main .pro div .four a{
+    text-decoration: none;
+    background-color: var(--blue-color);
+    color: white;
+    padding: 4px 10px;
+    font-size: 13px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.main .pro div .four a.sec{
+    background-color: var(--red-color);
+}

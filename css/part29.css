@@ -1,0 +1,97 @@
+.main .pro{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    gap: 20px;
+}
+@media (max-width: 767px){
+    .main .pro{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+        gap: 20px;
+    }
+}
+@media (min-width: 625px) and (max-width: 767px){
+    .main .pro{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+        gap: 20px;
+    }
+}
+.main .pro > div{
+    padding: 20px;
+    background-color: white;
+}
+.main .pro > div div{
+    text-align: center;
+    background-color: var(--green-color);
+    color: white;
+    padding: 20px;
+    border: 3px solid white;
+    outline: 3px solid var(--green-color);
+}
+.main .pro > div.basic div{
+    background-color: var(--blue-color);
+    outline-color: var(--blue-color);
+}
+.main .pro > div.pre div{
+    background-color: var(--orange-color);
+    outline-color: var(--orange-color);
+}
+.main .pro > div div h3{
+    position: relative;
+    font-size: 40px;
+    font-weight: 500;
+}
+.main .pro > div div h3 span{
+    position: relative;
+    left: -5px;
+    top: -15px;
+    font-size: 25px;
+}
+.main .pro > div ul {
+    margin: 15px 0px;
+}
+.main .pro > div ul li{
+    display: flex;
+    align-items: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+.main .pro > div ul li article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 5px;
+}
+.main .pro > div ul li span i.yes{
+    color: var(--green-color);
+    font-size: 18px;
+}
+.main .pro > div ul li span i.non{
+    color: var(--red-color);
+    font-size: 18px;
+}
+.main .pro > div ul li i.help{
+    color: var(--grey-color);
+}
+.main .pro > div a{
+    text-decoration: none;
+    padding: 4px 10px;
+    color: white;
+    background-color: var(--green-color);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.main .pro > div.basic a{
+    background-color: var(--blue-color);
+}
+.main .pro > div.pre h4{
+    color: var(--grey-color);
+    text-align: center;
+    font-weight: 500;
+}

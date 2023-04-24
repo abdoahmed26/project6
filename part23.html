@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/part23.css">
+    <link rel="stylesheet" href="css/framwork4.css">
+    <title>Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&#038;display=swap"
+        rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <h3>Elzero</h3>
+        <ul>
+            <li><a href="index.html"><i class="fa-regular fa-chart-bar fa-fw"></i>
+                <span>Dashboard</span></a>
+            </li>
+            <li class="active"><a href="#"><i class="fa-solid fa-gear fa-fw"></i>
+                <span>Settings</span></a>
+            </li>
+            <li><a href="part24.html"><i class="fa-regular fa-user fa-fw"></i>
+                <span>Profile</span></a>
+            </li>
+            <li><a href="part25.html"><i class="fa-solid fa-diagram-project fa-fw"></i>
+                <span>Projects</span></a>
+            </li>
+            <li><a href="part26.html"><i class="fa-solid fa-graduation-cap fa-fw"></i>
+                <span>Courses</span></a>
+            </li>
+            <li><a href="part27.html"><i class="fa-regular fa-circle-user fa-fw"></i>
+                <span>Friends</span></a>
+            </li>
+            <li><a href="part28.html"><i class="fa-regular fa-file fa-fw"></i>
+                <span>Files</span></a>
+            </li>
+            <li><a href="part29.html"><i class="fa-regular fa-credit-card fa-fw"></i>
+                <span>Plans</span></a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <div>
+            <form action="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="type" placeholder="Type A Keyword">
+            </form>
+        </div>
+        <div>
+            <i class="fa-regular fa-bell"></i>
+            <img src="t4.img/avatar.png" alt="">
+        </div>
+    </header>
+    <div class="main">
+        <h1>Settings</h1>
+        <div class="pro">
+            <div class="sit">
+                <h2>Site Control</h2>
+                <p>Control The Website If There Is Maintenance</p>
+                <article>
+                    <div>
+                        <h4>Website Control</h4>
+                        <span>Open/Close Website And Type The Reason</span>
+                    </div>
+                    <label class="rig" for="che">
+                        <input type="checkbox" name="che" id="che" checked>
+                        <div>
+                            <p class="check"><i class="fa-solid fa-check"></i><i class="fa-solid fa-xmark"></i></p>
+                        </div>
+                    </label>
+                </article>
+                <form action="">
+                    <textarea class="message" placeholder="Close Message Content"></textarea>
+                </form>
+            </div>
+            <div class="inf">
+                <h2>General Info</h2>
+                <p>General Information About Your Account</p>
+                <form action="">
+                    <div>
+                        <label for="First">First Name</label><br>
+                        <input type="text" id="First" placeholder="First Name" name="First">
+                    </div>
+                    <div>
+                        <label for="Last">Last Name</label><br>
+                        <input type="text" id="Last" placeholder="Last Name" name="Last">
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email" value="o@nn.sa" disabled>
+                        <a href="#">Change</a>
+                    </div>
+                </form>
+            </div>
+            <div class="sec">
+                <h2>Security Info</h2>
+                <p>Security Information About Your Account</p>
+                <article>
+                    <div>
+                        <h4>Password</h4>
+                        <span>Last Change On 25/10/2021</span>
+                    </div>
+                    <a href="#" class="chan">Change</a>
+                </article>
+                <article>
+                    <div>
+                        <h4>Two-Factor Authentication</h4>
+                        <span>Enable/Disable The Feature</span>
+                    </div>
+                    <label class="rig" for="chec">
+                        <input type="checkbox" name="che" id="chec" checked>
+                        <div>
+                            <p class="check"><i class="fa-solid fa-check"></i><i class="fa-solid fa-xmark"></i></p>
+                        </div>
+                    </label>
+                </article>
+                <article>
+                    <div>
+                        <h4>Devices</h4>
+                        <span>Check The Login Devices List</span>
+                    </div>
+                    <a href="#">Devices</a>
+                </article>
+            </div>
+            <div class="soc">
+                <h2>Social Info</h2>
+                <p>Social Media Information</p>
+                <article>
+                    <p><i class="fa-brands fa-twitter fa-2x c-white h-full center-flex"></i></p>
+                    <input type="text" placeholder="Twitter Username">
+                </article>
+                <article>
+                    <p><i class="fa-brands fa-facebook-f fa-2x c-white h-full center-flex"></i></p>
+                    <input type="text" placeholder="Facebook Username">
+                </article>
+                <article>
+                    <p><i class="fa-brands fa-linkedin fa-2x c-white h-full center-flex"></i></p>
+                    <input type="text" placeholder="Linkedin Username">
+                </article>
+                <article>
+                    <p><i class="fa-brands fa-youtube fa-2x c-white h-full center-flex"></i></p>
+                    <input type="text" placeholder="Youtube Username">
+                </article>
+            </div>
+            <div class="wid">
+                <h2>Widgets Control</h2>
+                <p>Show/Hide Widgets</p>
+                <form action="">
+                    <div>
+                        <input type="checkbox" name="Quick" id="Quick" checked>
+                        <label for="Quick">Quick Draft</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Yearly" id="Yearly" checked>
+                        <label for="Yearly">Yearly Targets</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Tickets" id="Tickets" checked>
+                        <label for="Tickets">Tickets Statistics</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Latest" id="Latest" checked>
+                        <label for="Latest">Latest News</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Tasks" id="Tasks">
+                        <label for="Tasks">Latest Tasks</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="Top" id="Top" checked>
+                        <label for="Top">Top Search Items</label>
+                    </div>
+                </form>
+            </div>
+            <div class="man">
+                <h2>Backup Manager</h2>
+                <p>Control Backup Time And Location</p>
+                <form action="">
+                    <div>
+                        <input type="radio" name="radio" id="Daily" checked>
+                        <label for="Daily">Daily</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radio" id="Weekly">
+                        <label for="Weekly">Weekly</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="radio" id="Monthly">
+                        <label for="Monthly">Monthly</label>
+                    </div>
+                </form>
+                <article>
+                    <label for="Megaman">
+                        <input type="radio" name="block" id="Megaman">
+                        <div>
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <p>Megaman</p>
+                        </div>
+                    </label>
+                    <label for="Zero">
+                        <input type="radio" name="block" id="Zero" checked>
+                        <div>
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <p>Zero</p>
+                        </div>
+                    </label>
+                    <label for="Sigma">
+                        <input type="radio" name="block" id="Sigma">
+                        <div>
+                            <i class="fa-solid fa-server d-block mb-10"></i>
+                            <p>Sigma</p>
+                        </div>
+                    </label>
+                </article>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
